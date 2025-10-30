@@ -182,7 +182,7 @@ where
 
     /// Construct a bitmap from a value of the same type as its backing store.
     #[inline]
-    pub fn from_value(data: <BitsImpl<SIZE> as Bits>::Store) -> Self {
+    pub const fn from_value(data: <BitsImpl<SIZE> as Bits>::Store) -> Self {
         Self { data }
     }
 
